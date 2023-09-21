@@ -15,8 +15,8 @@ The data was sourced from [pgAdmin](https://analyticsga-euwest1.generalassemb.ly
 - Highlight the key attributes (proof, shelf price, bottle size, etc.) that contribute to the success of products in the selected category.
 - Identify top-performing counties and specific stores for Bacardi product rollout, emphasizing profit per capita and overall profits.
 
-### Example SQL Queries
-#### Profitability of Different Product Categories
+## Example SQL Queries
+### Profitability of Different Product Categories
 ```
 SELECT category_name,			
     SUM((btl_price - state_btl_cost) * bottle_qty) AS total_profit			
@@ -26,7 +26,7 @@ GROUP BY category_name
 ORDER BY total_profit DESC
 ```
 
-#### Top 10 Performing Vendors Based on Total Sales
+### Top 10 Performing Vendors Based on Total Sales
 ```
 SELECT 			
 	CASE 		
@@ -40,7 +40,7 @@ ORDER BY total_sales DESC
 LIMIT 10
 ```
 
-#### Bacardi's Market Share in Various Products and their Defining Elements
+### Bacardi's Market Share in Various Products and their Defining Elements
 ```
 WITH CategoryProfits AS (			
     SELECT products.category_name,			
@@ -55,18 +55,18 @@ ORDER BY market_share DESC
 For a detailed look into the SQL queries used in this project, please refer to the [SQL File](bacardi-queries.sql).
 
 
-### Key Findings & Recommendations 
-#### Product Strategy:
+## Key Findings & Recommendations 
+### Product Strategy:
 
-##### Category:
+#### Category:
 Prioritize the Spiced Rum category, where Bacardi's market share is just 0.7%, given it's the third-largest market in Iowa.
 
-##### Specifications:
+#### Specifications:
 - Proof: Introduce a product with 70 proof, in line with top-performing products in this category.
 - Bottle Size: Launch with a 1750 mL bottle, reflecting the preference of the dominant segment.
 - Shelf Price: Position the product at a $27 price point, a successful benchmark among leading products in the 1750 mL category. For a 1000 mL bottle variant, a price of $17.63 is recommended based on top performers.
 
-##### Market Entry Strategy:
+#### Market Entry Strategy:
 Geographic Focus: Concentrate on counties with the highest Spiced Rum profit per capita, specifically Dickinson, Carroll, Kossuth, O’Brien, and Lyon.
 
 Retail Partnerships: Initiate the rollout in high-performing stores for Spiced Rum, including:
@@ -74,7 +74,7 @@ Retail Partnerships: Initiate the rollout in high-performing stores for Spiced R
 - Hy-vee Wine and Spirits in Harlan, Denison, and Spirit Lake
 - Okoboji Avenue Liquor in Dickinson.
 
-### Tools & Technologies
+## Tools & Technologies
 - SQL
 - pgAdmin
 - [Database](https://analyticsga-euwest1.generalassemb.ly/login?next=%2F)
