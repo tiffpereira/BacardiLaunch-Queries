@@ -4,7 +4,7 @@
 This involved analyzing Iowa liquor sales data to uncover insights and opportunities for a new Bacardi product, to grow its market share and have a successful launch. The analysis was conducted using SQL, focusing on sales trends, category and product performance, and market share. The data from the SQL queries where visualized using Excel. 
 
 ### Data Source
-The data was sourced from [source name/link], which contains detailed transactional data on liquor sales in Iowa.
+The data was sourced from [pgAdmin](https://analyticsga-euwest1.generalassemb.ly/login?next=%2F), which contains detailed transactional data on liquor sales in Iowa.
 
 ## Key Objectives
 - Identify the top-performing vendors based on total sales.
@@ -75,8 +75,8 @@ Retail Partnerships: Initiate the rollout in high-performing stores for Spiced R
 - Okoboji Avenue Liquor in Dickinson.
 
 ### Tools & Technologies
-SQL
-pgAdmin
-[Database](https://analyticsga-euwest1.generalassemb.ly/login?next=%2F)
-Excel
-Powerpoint
+- SQL
+- pgAdmin
+- [Database](https://analyticsga-euwest1.generalassemb.ly/login?next=%2F)
+- Excel
+- Powerpoint
